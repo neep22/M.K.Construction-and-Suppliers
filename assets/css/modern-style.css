@@ -455,9 +455,13 @@ body {
     color: var(--dark-gray);
     margin-bottom: 1rem;
     line-height: 1.6;
+
 }
-.property-content h4{
-    font-size: 22px;
+.property-content h4 {
+	font-size: 22px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 400;
+	line-height: 30px;
 }
 .property-price {
     display: flex;
@@ -516,6 +520,10 @@ body {
 }
 .bed-interior-card:hover{
  transform: perspective(1000px) rotateY(5deg) scale(1.05);
+}
+.service-list {
+	font-size: 22px;
+	line-height: 50px;
 }
 /* Stats Section */
 .stats-section {
@@ -2719,6 +2727,7 @@ img.loaded {
     font-size: 0.8rem;
     margin-top: 5px;
 }
+
 
 /* Slider Navigation */
 .slider-arrow {
