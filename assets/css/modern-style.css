@@ -427,7 +427,7 @@ body {
 .property-image {
     position: relative;
     overflow: hidden;
-    height: 250px;
+    height: 450px;
 }
 
 .property-image img {
@@ -492,7 +492,31 @@ body {
     color: var(--dark-gray);
     font-weight: 500;
 }
-
+.interior-card{
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+	margin-bottom: 2rem;
+    transition: .5s;
+    cursor: pointer;
+	
+}
+.interior-card:hover{
+    transform: translateY(-50px)
+}
+.bed-interior-card{
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(1, 1, 1, 0.5);
+	margin-bottom: 2rem;
+    transition: .5s;
+    border-radius: 40%;
+    position: relative;
+	transform: perspective(1000px) rotateY(25deg);
+	transition: var(--transition);
+}
+.bed-interior-card:hover{
+ transform: perspective(1000px) rotateY(5deg) scale(1.05);
+}
 /* Stats Section */
 .stats-section {
     padding: 4rem 0;
@@ -792,10 +816,10 @@ body {
 }
 
 .team-info p {
-    color: var(--secondary);
-    font-weight: 500;
-    font-size: 20px;
-    margin: 0;
+	color: var(--secondary);
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 18px;
 }
 
 .social-links {
@@ -1224,7 +1248,10 @@ body {
     padding: 5rem 0;
     background: var(--light-gray);
 }
-
+.team-info span {
+	font-size: 14px;
+    margin-top: 10px;
+}
 .specialized-service {
     background: var(--white);
     border-radius: 15px;
@@ -2869,5 +2896,6 @@ img.loaded {
 .back-to-top.show:hover {
     transform: translateY(-5px);
 }
+
 
 }
